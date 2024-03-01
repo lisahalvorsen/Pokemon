@@ -2,41 +2,41 @@
 let pikachu = {
     name: "Pikachu",
     health: 45,
-    image: "Img/pikachu.png",
+    image: "img/pikachu.png",
     level: 8,
 };
 
 let eevee = {
     name: "Eevee",
     health: 40,
-    image: "Img/eevee.png",
+    image: "img/eevee.png",
     level: 7,
 };
 
 let bulbasaur = {
     name: "Bulbasaur",
     health: 70,
-    image: "Img/bulbasaur.png",
+    image: "img/bulbasaur.png",
     level: 12,
 };
 
 let charmander = {
     name: "Charmander",
     health: 60,
-    image: "Img/charmander.png",
+    image: "img/charmander.png",
     level: 10,
 };
 
 let squirtle = {
     name: "Squirtle",
     health: 30,
-    image: "Img/squirtle.png",
+    image: "img/squirtle.png",
     level: 5,
 };
 
 let player = {
     name: "Jens",
-    image: "Img/pokemonplayer.png",
+    image: "img/pokemonplayer.png",
     playerPokemon: [],
 
 };
