@@ -60,4 +60,5 @@ img {
     justify-items: center;
     max-height: calc(100vh - 200px);
     overflow-y: auto;
+    gap: 10px;
 }
