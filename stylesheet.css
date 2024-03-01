@@ -1,0 +1,63 @@
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    width: 98vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+}
+
+.opposingPokemon {
+    margin-left: 50%;
+}
+
+.button {
+    height: 60px;
+    width: 100px;
+    border-radius: 40px;
+    background-color: orange;
+    color: whitesmoke;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttonContainer {
+    width: 200;
+    display: flex;
+    margin-bottom: 22px;
+    margin-left: 50%;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.playerImage {
+    width: 150px;
+    height: 300px;
+}
+
+.bottomScreen {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.caughtContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pokemonView {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 20px;
+    justify-items: center;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
