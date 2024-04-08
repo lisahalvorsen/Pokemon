@@ -44,14 +44,20 @@ let player = {
 let possiblePokemon = [pikachu, eevee, bulbasaur, charmander, squirtle];
 let randomPokemon;
 let pokemonView = '';
-
+// let currentView = '';
 
 let app = document.getElementById("app");
 
 // View 
 updateView();
 
-function updateView() {
+function updateView(view) {
+    if (view == 'game') gameView()
+    else if (view == 'caughtPokemon') caughtPokemonView()
+    else if (view == 'showPokemon') showPokemonView()
+}
+
+function gameView() {
     getRandomPokemon();
     app.innerHTML = /*HTML*/ ` 
     <div class="container">
@@ -70,7 +76,9 @@ function updateView() {
         <div class="buttonContainer">
             <button onclick="catchPokemon()" class="button">Fang pokemon</button>
             <button onclick="updateView()"  class="button">Finn ny pokemon</button>
-            <button onclick="showPokemon()"  class="button">Vis dine pokemon</button>
+            <button onclick="updateView('showPokemon')"  class="button">Vis dine pokemon</button>
+            <!---<button onclick="${currentView = 'showPokemon'}, updateView()"  class="button">Vis dine pokemon</button> -->
+            <!--- button onclick="updateView = 'currentView") -->
         </div>
     </div>
 </div>
@@ -98,7 +106,7 @@ function showPokemonView() {
             <div class="pokemonView">${pokemonView}</div>
         </div>
         <div class="buttonContainer">
-            <button onclick="updateView()"  class="button">Finn ny pokemon</button>
+            <button onclick="updateView()" class="button">Finn ny pokemon</button>
         </div>
     </div>
     `;
